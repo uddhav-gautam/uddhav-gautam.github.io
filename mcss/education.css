@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');    
+
+
+
+/*EDUCATION*/
+.education-section {
+    padding: 60px 0;
+    
+    
+}
+
+.education-title .h2{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 0;
+    font-family: 'Montserrat';
+}
+.education-item {
+    border-bottom: 1px solid #dee2e6;
+    padding: 20px 0;
+}
+.education-item:last-child {
+    border-bottom: none;
+}
+.education-item img {
+    max-width: 150px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+.education-item h5 {
+    font-weight: bold;
+    font-family: 'Montserrat';
+}
+.education-item li{
+    text-align: justify;
+    font-family: 'Montserrat';
+}

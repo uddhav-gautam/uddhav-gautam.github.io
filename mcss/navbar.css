@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');    
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Montserrat';
+}
+.navbar-nav .nav-link {
+    font-size: 1.1rem;
+    margin-right: 20px;
+}
+.navbar-nav .nav-link:hover {
+    color: #0056b3;
+}

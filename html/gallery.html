@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/mcss/gallery.css">
+    <title>Uddhav Gautam | Gallery</title>
+</head>
+
+<body>
+    <div id="navbar-placeholder"></div>
+
+    <section class="education-section container mt-5 pt-5">
+        <div class="row">
+            <div class="col-md-5">
+                <h2 class="education-title">GALLERY</h2>
+                <p class="mb-5">These are the pictures of the various events I have attended as a speaker.</p>
+            </div>
+
+            <div class="col-md-7">
+                <div class="row g-0 bg-body-secondary position-relative">
+                    <div class="col-md-6 mb-md-0 p-md-4">
+                        <img src="/assets/gallery1.jpg" class="w-100" alt="Image 1" loading="lazy">
+                    </div>
+                    <div class="col-md-6 p-4 ps-md-0">
+                        <p>Presentation of the Academic Freedom In Post-Soviet States: Analysis Of Ukraine, Russia, And
+                            The Belarus Case during the European Student Advocacy Days, University of Trento (14-15
+                            December 2023)</p>
+                    </div>
+                </div>
+
+                <div class="row g-0 bg-body-secondary position-relative mt-3">
+                    <div class="col-md-6 mb-md-0 p-md-4">
+                        <img src="/assets/gallery2.jpg" class="w-100" alt="Image 2" loading="lazy">
+                    </div>
+                    <div class="col-md-6 p-4 ps-md-0">
+                        <p>The felicitation ceremony (attended by my father on my behalf) organized by Nepal Army for
+                            the authors published in the Unity Journal Vol. 3. My article Role of Nepali Army in
+                            Promotion and Preservation of Nepalese Art, Culture, and Traditions was adjudged one of the
+                            best in the ceremony.</p>
+                    </div>
+                </div>
+
+                <div class="row g-0 bg-body-secondary position-relative mt-3">
+                    <div class="col-md-6 mb-md-0 p-md-4">
+                        <img src="/assets/gallery3.jpg" class="w-100" alt="Image 3" loading="lazy">
+                    </div>
+                    <div class="col-md-6 p-4 ps-md-0">
+                        <p>The felicitation ceremony (attended by my mother on my behalf) organized by Nepal Army for
+                            the authors published in the Unity Journal Vol. 5. My article The Role of Culture Power:
+                            Examining the Influence of Popular Culture in Shaping Global Power Dynamics was adjudged one
+                            of the best in the ceremony.</p>
+                    </div>
+                </div>
+
+                <div class="row g-0 bg-body-secondary position-relative mt-3">
+                    <div class="col-md-6 mb-md-0 p-md-4">
+                        <img src="/assets/gallery4.jpg" class="w-100" alt="Image 4" loading="lazy">
+                    </div>
+                    <div class="col-md-6 p-4 ps-md-0">
+                        <p>Presentation of the report Academic Freedom In Post-Soviet States: Analysis Of Ukraine,
+                            Russia, And The Belarus Case at Academic Freedom Seminar, University of Padova (5th April
+                            2023). We were invited as guest speakers representing University of Trento (under Jean
+                            Monnet Project) to present our work during the seminar.</p>
+                    </div>
+                </div>
+
+                <div class="row g-0 bg-body-secondary position-relative mt-3">
+                    <div class="col-md-6 mb-md-0 p-md-4">
+                        <img src="/assets/gallery5.jpg" class="w-100" alt="Image 5" loading="lazy">
+                    </div>
+                    <div class="col-md-6 p-4 ps-md-0">
+                        <p>The cohort of DHF grant recipient for the year 2023.</p>
+                    </div>
+                </div>
+
+                <div class="row g-0 bg-body-secondary position-relative mt-3">
+                    <div class="col-md-6 mb-md-0 p-md-4">
+                        <img src="/assets/gallery6.jpg" class="w-100" alt="Image 6" loading="lazy">
+                    </div>
+                    <div class="col-md-6 p-4 ps-md-0">
+                        <p>Presentation given at University of Graz and GUSSEG event.</p>
+                    </div>
+                </div>
+
+                <div class="row g-0 bg-body-secondary position-relative mt-3">
+                    <div class="col-md-6 mb-md-0 p-md-4">
+                        <img src="/assets/gallery7.jpeg" class="w-100" alt="Image 7" loading="lazy">
+                    </div>
+                    <div class="col-md-6 p-4 ps-md-0">
+                        <p>Of the mountain, for the mountain, by the mountain.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="" alt="Image">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer placeholder -->
+    <div id="footer-placeholder" class="mt-4"></div>
+
+
+
+    <script src="/js/footer.js"></script>
+
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/load-navbar.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const modal = new bootstrap.Modal(document.getElementById('imageModal'));
+            const modalImage = document.querySelector('#imageModal .modal-body img');
+
+            document.querySelectorAll('img[alt^="Image"]').forEach(img => {
+                img.addEventListener('click', function () {
+                    // Check if the device is not a mobile device
+                    if (window.innerWidth >= 768) {
+                        modalImage.src = this.src;
+                        modal.show();
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
