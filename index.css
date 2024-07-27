@@ -28,8 +28,24 @@ body {
 }
 
 
-.carousel-item{
-    width: 75vh;
+/* .parallax {
+    background-image: url('/assets/main.JPG');
+    height: 75vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+.carousel-inner .carousel-item {
+    height: 75vh; /* Adjust the height as needed */
+    background-attachment: fixed;
+}
+
+.carousel-inner .carousel-item img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
 }
 
 
