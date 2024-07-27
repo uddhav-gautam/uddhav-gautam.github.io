@@ -28,14 +28,12 @@ body {
 }
 
 
-.parallax {
-    background-image: url('/assets/main.JPG');
-    height: 75vh;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.carousel-item{
+    width: 75vh;
 }
+
+
+
 
 .content {
     position: relative;
@@ -52,6 +50,6 @@ body {
     }
 
     .content {
-        padding: 10px;
+        padding: 20px;
     }
 }
