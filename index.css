@@ -37,16 +37,21 @@ body {
     background-size: cover;
 } */
 
-.carousel-inner .carousel-item {
+/* .carousel-inner .carousel-item {
     height: 75vh; /* Adjust the height as needed */
-    background-attachment: fixed;
+    /* background-attachment: fixed;
 }
 
 .carousel-inner .carousel-item img {
     object-fit: cover;
     height: 100%;
     width: 100%;
+} */ */
+.carousel-item{
+    width: 100%;
+    height: auto;
 }
+
 
 
 
